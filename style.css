@@ -2,3 +2,13 @@ body, h1, h2, h3, p{
     margin: 0px;
     background-color: #043873;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.header-button-1{
+    background-color: transparent;
+    border: none;
+}
