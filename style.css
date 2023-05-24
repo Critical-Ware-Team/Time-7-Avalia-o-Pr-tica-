@@ -11,24 +11,33 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    min-height: 56px•;
 }
-.header-button-1{
+.header-1{
     background-color: transparent;
     border: none;
 }
-.header-button-2{
+.header-2{
     display: none;
 }
 
 
-
+@media (min-width: 768px){
+    header{
+        padding: 2em;
+        min-height: 66px;
+    }
+}
 
 @media (min-width: 1260px){
-    .header-button-1{
+    .header-1{
         display: none;
     }
-    .header-button-2{
+    .header-2{
         display: initial;
+    }
+    .buttons{
+        min-width: 281px;
     }
     header button{
         border: none;
@@ -49,10 +58,23 @@ header{
     }
     nav{
         display: flex;
+        align-items: flex-start;
         font-family: 'DM Sans', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 23px;
         color: #FFFFFF;
+        min-width: 520px;
+
+        margin-left: 10%;
+    }
+    nav p{
+        display: inline-flex;
+        align-items: center;
+        gap: 1em;
+        margin-left: 2%;
+    }
+    body{
+        padding: 0px 4em;
     }
 }
