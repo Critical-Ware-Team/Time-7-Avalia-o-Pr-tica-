@@ -12,3 +12,35 @@ header{
     background-color: transparent;
     border: none;
 }
+.header-button-2{
+    display: none;
+}
+
+
+
+
+@media (min-width: 1260px){
+    .header-button-1{
+        display: none;
+    }
+    .header-button-2{
+        display: initial;
+    }
+    header button{
+        border: none;
+        border-radius: 8px;
+        padding: 1em;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+    }
+    .login{
+        background-color: #FFE492;
+        color: #043873;
+    }
+    .free-try{
+        background-color: #4F9CF9;
+        color: white;
+    }
+}
