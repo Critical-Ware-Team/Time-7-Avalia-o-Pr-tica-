@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 body, h1, h2, h3, p{
     margin: 0px;
     background-color: #043873;
+    font-family: 'Inter', sans-serif;
 }
 header{
     display: flex;
@@ -42,5 +46,13 @@ header{
     .free-try{
         background-color: #4F9CF9;
         color: white;
+    }
+    nav{
+        display: flex;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
     }
 }
