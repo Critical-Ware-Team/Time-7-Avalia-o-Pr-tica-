@@ -6,6 +6,7 @@ body{
     background-color: #043873;
     font-family: 'Inter', sans-serif;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,10 +16,11 @@ h1, h2, h3, p{
 }
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1em;
-    min-height: 56px•;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 .blue-button{
     background-color: #4F9CF9;
@@ -42,29 +44,70 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
-    justify-content: space-between;
     color: white;
-    padding: 4em 0px 0px;
+    overflow: hidden;
+    padding: 4em 0px;
 
     position: relative;
-    max-width: 288px;
+}
+.blue-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5rem;
+}
+.blue-screen h1{
+    font-size: 2.25rem;
 }
 .blue-screen p{
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+
     position: relative;
-    top: -1em;
+    top: -2em;
+    max-width: 90%;
 }
 .waves{
-    transform: rotate(25deg) scaleX(0.4);
     position: absolute;
-    top: 0;
+    top: -4rem;
+
     z-index: -1;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.waves img{
+    position: relative;
+    left: 3em;
+    transform: rotate(20deg) scaleX(0.4);
 }
 
 @media (min-width: 768px){
     header{
         padding: 2em;
         min-height: 66px;
+    }
+    .blue-screen{
+        width: 100vw;
+    }
+    .blue-content{
+        gap: 3rem;
+    }
+    .blue-screen h1{
+        font-size: 3.375rem;
+    }
+    .blue-screen p{
+        top: -1em;
+    }
+    .waves img{
+        top: -3em;
+        left: -10em;
+        transform: scale(0.8);
     }
 }
 
@@ -112,5 +155,20 @@ header{
     }
     body{
         padding: 0px 4em;
+    }
+    .blue-screen{
+        align-items: flex-start;
+        padding: 7.5em 1em;
+    }
+    .blue-content{
+        position: relative;
+        left: 5em;
+        align-items: flex-start;
+    }
+    .blue-screen p{
+        max-width: max-content;
+    }
+    .waves{
+        top: -1.2em;
     }
 }
