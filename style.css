@@ -20,9 +20,9 @@ p {
 
 header {
     display: flex;
+    width: 100%;
     align-items: center;
     padding: 1em;
-    /* width: 100%; */
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -230,8 +230,6 @@ footer{
         width: 223px;
         top: calc(80% + 7px);
     }
-
-    .white-screen p {}
 
     .white-screen button img {
         transform: scale(150%);
