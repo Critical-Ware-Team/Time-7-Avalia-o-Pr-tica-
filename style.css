@@ -87,6 +87,58 @@ header{
     transform: rotate(20deg) scaleX(0.4);
 }
 
+.white-screen{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1em;
+}
+
+.white-screen .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.white-screen .text h2{
+    padding-top: 30%;
+    font-size: 2.25rem;
+    z-index: 1;
+}
+
+.white-screen .text p{
+    z-index: 1;
+    font-size: 1.125rem;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+
+    position: relative;
+    top: -2em;
+    max-width: 100%;
+}
+
+.white-screen .text .markup{
+    display: flex;
+    position: relative;
+    transform: scale(65%) scaleX(90%) scaleY(170%) ;
+    left: 3.4em;
+    top: -3.4em;
+}
+
+.white-screen .text .blue-button{
+    padding: 1.4em 2.5em;
+}
+
+.white-screen .spiral{
+    max-width: 90%;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+
 @media (min-width: 768px){
     header{
         padding: 2em;
@@ -108,6 +160,25 @@ header{
         top: -3em;
         left: -10em;
         transform: scale(0.8);
+    }
+    .white-screen h2{
+        padding-top: 15%;
+        font-size: 3.7rem;
+    }
+
+    .white-screen .markup{
+        transform: scaleY(200%) scaleX(80%);
+        left: 5em;
+        top: -2.5em;
+    }
+
+    .white-screen button img{
+        transform: scale(150%);
+    }
+
+    .white-screen .spiral{
+        max-width: 65%;
+        margin: 6em 1em;
     }
 }
 
